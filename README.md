@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# Prueba Frontend para Softek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una prueba de frontend para la empresa Softek. Utiliza React, Vite y TypeScript para resolver un desafío.
 
-Currently, two official plugins are available:
+Actualmente, hay dos complementos oficiales disponibles:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) utiliza [Babel](https://babeljs.io/) para Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) utiliza [SWC](https://swc.rs/) para Fast Refresh
 
-## Expanding the ESLint configuration
+## Levantar la aplicacion
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para levantar la aplicación asegurate de tener npm instalado antes.
 
-- Configure the top-level `parserOptions` property like this:
+- Instala las dependencias
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+ $ npm install --legacy-peer-deps
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Levanta el proyecto en tu local
+
+```
+ $ npm run dev
+```
+
+- El proyecto se levantara en un link como este: http://localhost:5173
