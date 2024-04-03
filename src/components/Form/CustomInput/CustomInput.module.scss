@@ -1,0 +1,49 @@
+@use '../../../assets/sass/01-abstracts/_abstracts-dir' as *;
+
+.container {
+    position: relative;
+    margin-bottom: 16px;
+    label {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $grey-60;
+        position: absolute;
+        left: 16px;
+        top: 8px;
+        &.error {
+            color: $tertiary;
+        }
+    }
+    input {
+        width: 100%;
+        border: 1px solid $grey-60;
+        padding: 8px 16px;
+        padding-top: 24px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        &.error {
+            border-color: $tertiary;
+            &:focus-visible {
+                border-color: $tertiary;
+            }
+        }
+    }
+    small {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $tertiary;
+        margin-top: 8px;
+        @media (max-width: 768px){
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 13px;
+            padding: 0 16px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use '../../assets/sass/01-abstracts/_abstracts-dir' as *;
+
+.container {
+    width: fit-content;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.4000000059604645px;
+    background: linear-gradient(86.01deg, $sky_blue 0%, $green 100%);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    @media (max-width: 768px) {
+        margin-bottom: 8px;
+    }
+}

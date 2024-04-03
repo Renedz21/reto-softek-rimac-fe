@@ -1,0 +1,38 @@
+@use '../../../../../assets/sass/01-abstracts/_abstracts-dir' as *;
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $grey-2;
+  h5 {
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      color: $primary;
+  }
+  small {
+      display: block;
+      font-size: 12px;
+      font-weight: 900;
+      line-height: 16px;
+      color: $neutral;
+      margin-top: 25px;
+      margin-bottom: 4px;
+  }
+  del {
+    margin: 4px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $neutral;
+  }
+  p {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 28px;
+      color: $primary;
+  }
+}

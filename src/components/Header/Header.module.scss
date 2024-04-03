@@ -1,0 +1,20 @@
+@use '../../assets/sass/01-abstracts/_abstracts-dir' as *;
+
+.container {
+    height: fit-content;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 14px 0px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    @media ( max-width: 768px ) {
+        padding: 12px 24px;
+    }
+    > img {
+        @media ( max-width: 768px ) {
+            height: 32px;
+        }
+    }
+}

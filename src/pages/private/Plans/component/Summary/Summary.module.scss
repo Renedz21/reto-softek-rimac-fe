@@ -1,0 +1,61 @@
+@use '../../../../../assets/sass/01-abstracts/_abstracts-dir' as *;
+
+.container {
+    width: 75%;
+    max-width: 1600px;
+    margin: auto;
+    margin-bottom: 112px;
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 32px 24px;
+    }
+    h3 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: $primary;
+        margin-top: 32px;
+        margin-bottom: 48px;
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+    > div {
+        > p {
+            font-size: 10px;
+            font-weight: 900;
+            line-height: 16px;
+            letter-spacing: 0.8px;
+            color: $primary;
+            margin-bottom: 8px;
+        }
+        h5 {
+            color: $primary;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            display: flex;
+            align-content: center;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $grey-2;
+            img {
+                margin-right: 12px;
+            }
+        }
+        ul {
+            margin-bottom: 16px;
+            list-style: none;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            li {
+                margin-bottom: 4px;
+                margin: 0;
+                font-size: 16px;
+                line-height: 24px;
+                color: $primary;
+            }
+        }
+    }
+}
